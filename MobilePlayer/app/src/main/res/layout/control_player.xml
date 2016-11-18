@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/control_player"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_alignParentBottom="true"
+    android:visibility="visible"
+     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#77000000"
+        android:gravity="center"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_player_pre"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/player_pre"/>
+        <Button
+            android:id="@+id/btn_player_pause"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+        android:background="@drawable/player_play"/>
+        <Button
+            android:id="@+id/btn_player_next"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="@drawable/player_next"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_swich_player"-->
+            <!--android:layout_width="40dp"-->
+            <!--android:layout_height="40dp"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:background="@drawable/btn_switch_normal"/>-->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:background="#77000000"
+        >
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:textColor="#fff"
+            android:text="当前时间"/>
+
+        <SeekBar
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:minHeight="5dp"
+            android:maxHeight="5dp"
+            android:secondaryProgress="0"
+            android:progressDrawable="@drawable/progress_horizontal"
+            android:thumb="@drawable/progress_thumb"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:text="总时长"/>
+
+    </LinearLayout>
+
+</LinearLayout>
